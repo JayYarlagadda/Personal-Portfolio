@@ -10,7 +10,7 @@
     <div id="header">
         <div class ='container'>
             <nav>
-                <img src="images/logo.png" alt="logo">
+                <img src="images/logo.png" alt="logo" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,7 +22,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software Devloper</p>
+                <p>Software Developer</p>
                 <h1>Hi, I'm <span>Jay</span></h1>
             </div>
         </div>
@@ -33,48 +33,62 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/background.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I’m Jayanth Sai Yarlagadda!
-
-                        I am a Master’s student in Software Engineering at San Jose State University with a strong interest in cloud computing and DevOps. 
-                        I have hands-on experience in AWS Cloud, IoT, and enterprise software and have completed multiple internships in these areas.</p>
+                    <p class="about-description">Hi, I'm Jayanth Sai Yarlagadda, pursuing my Master's in Software Engineering at San José State University. I'm passionate about crafting software solutions that merge efficiency and innovation. I've deployed scalable web apps on AWS, optimized mobile-edge computing, reducing resource usage by 25%, built responsive e-commerce frontends with React, and engineered secure data portals for healthcare.</p>
+                    <p class="about-description">Fluent in Python, Java, C++, and full-stack web technologies, I thrive at the intersection of robust code and seamless user experiences.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                                <li><span>Programming Languages</span><br>Python, Java, C, C++, HTML/CSS, JavaScript, SQL</li>
+                                <li><span>Developer Tools</span><br>VS Code, Eclipse, Google Cloud Platform, Android Studio</li>
+                                <li><span>Frameworks & Tools</span><br>React.js, Node.js, AWS (EC2, S3), Jenkins, GitHub, Docker, iFogSim</li>
+                                <li><span>Core Concepts</span><br>Object-Oriented Design, API Development, Unix Systems, Data Modeling, Problem Solving, Agile Development, Data Structures and Algorithms</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                                <li><span>AWS Cloud Virtual Internship</span><br>AICTE, EduSkills, AWS Academy | May 2023 - July 2023<br>• Completed 10-week virtual internship covering cloud fundamentals and core services<br>• Gained hands-on exposure to EC2, S3, IAM, and cloud deployment models<br>• Built 2-tier web application on AWS using EC2, S3, and Route 53<br>• Developed skills in cloud architecture, networking, and identity management</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>UI/UX</span><br>Designing web/app interfaces</li>
-                                <li><span>Currently</span><br>Master's at San Jose State University</li>
-                                <li><span>2024</span><br>Bachelor's from SRM institute of science and Technology</li>
+                                <li>
+                                    <span>San Jose State University</span><br>
+                                    Master of Science in Software Engineering<br>
+                                    Jan. 2025 – Dec. 2026, San Jose, CA<br>
+                                    GPA: 3.5/4.0
+                                </li>
+                                <li>
+                                    <span>SRM Institute of Science and Technology</span><br>
+                                    Bachelor of Technology in Computer Science and Engineering<br>
+                                    (Specialization in Cloud Computing)<br>
+                                    Aug. 2020 – May 2024, Chennai, India<br>
+                                    CGPA: 8.5/10
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>AWS Certified Cloud Practitioner</span><br><a href="https://www.credly.com/badges/9385622c-99f7-4f64-9298-caa7705546f6/linked_in_profile" target="_blank">View Certificate</a></li>
+                                <li><span>3rd Prize, Project Expo 2024</span><br>Project Title: Efficient Task Offloading in Mobile Edge Computing: A Work Sharing Algorithm with Honeycomb Architecture<br>SRM Institute of Science and Technology, Kattankulathur, Chennai</li>
                             </ul>
                         </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ------------------- Services --------------------------->
-     <div id ="Services">
+         <!-- ------------------- Services --------------------------->
+     <!-- <div id ="Services">
         <div class="container">
-            <h1 class="sub-title">About Me</h1>
+            <h1 class="sub-title">Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -96,7 +110,7 @@
                 </div>
             </div>
         </div>
-     </div>
+     </div> -->
      <!-- -----------------------------Portfolio------------------------->
       <div id="porfolio">
         <div class="container">
@@ -105,29 +119,29 @@
                 <div class="work">
                     <img src="/images/work-1.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Blah Blah Blah</p>
+                        <h3>Mobile Edge Computing</h3>
+                        <p>Team Lead - AWS, iFogSim, Python<br>Led 3-member group designing simulation framework. Improved resource allocation by 25%.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                </div>
                <div class="work">
                 <img src="/images/work-2.png">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>Blah Blah Blah</p>
+                    <h3>Grocery Website</h3>
+                    <p>Frontend Developer – HTML, CSS, JavaScript<br>Built responsive online store with real-time inventory. Boosted session duration by 20%.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
            </div>
            <div class="work">
             <img src="/images/work-3.png">
             <div class="layer">
-                <h3>Online Shopping App</h3>
-                <p>Blah Blah Blah</p>
+                <h3>Healthcare Data Framework</h3>
+                <p>Full-Stack Dev - Java, AWS, MySQL<br>Co-engineered secure healthcare portal with encryption. Reduced latency by 18%.</p>
                 <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
        </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="https://github.com/JayYarlagadda" target="_blank" class="btn">See more</a>
         </div>
       </div>
       <!-- -----------------------------Contact------------------------------->
@@ -142,9 +156,9 @@
                         <a href=""><i class="fa-brands fa-square-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-twitter-square"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/jay-yarlagadda/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="/images/Jayanth_Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="/images/Jayanth_Resume_SE.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
